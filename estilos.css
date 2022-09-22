@@ -173,13 +173,7 @@ h2 {
     padding-top: 5rem;
 }
 
-.footer {
-    display: flex;
-    border-width: 0.05cm;
-    background-color: blanchedalmond;
-    
 
-}
 .container-box{
     display: flex;
     flex-wrap: wrap-reverse;
@@ -197,7 +191,11 @@ img{
     max-width: 400px;
  }
 
-
+ .footer {
+    display: flex;
+    border-width: 0.05cm;
+    background-color: blanchedalmond;
+}
 
 .footer p {
     font-family: 'Roboto', sans-serif;
