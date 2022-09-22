@@ -1,7 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+* { margin: 0;
+    padding: 0;  }
 
 h1 {
     text-align: center;
@@ -13,11 +11,14 @@ h1 {
 }
 
 .encabezado {
-    background-image: top;
-    background-color: white;
-}
+    background-position: top;
+    background-color: white;  }
 
-
+.menuSuperior {
+    list-style: none;
+    text-align: center;
+    /* background-color: #cc9f67d2; */
+    background-color: blanchedalmond;  }
 
 .menuSuperior {
     list-style: none;
@@ -30,93 +31,73 @@ h1 {
     display: inline-block;
     padding: 1.2rem;
     font-weight: 600;
-    padding-left: 1rem;
-
-
-}
+    padding-left: 1rem;  }
 
 .menuSuperior h1 {
     font-family: 'Playfair Display', serif;
-    text-align: center;
-
-}
+    text-align: center;  }
 
 .menuSuperior label {
     font-weight: 600;
     color: #a37dc7;
     font-size: 0.5cm;
-    margin-right: 1rem;
-
-}
-
+    margin-right: 1rem;  }
 
 .menuSuperior a {
     text-decoration: none;
     color: #a37dc7;
     font-size: 0.5cm;
-
 }
-
+    
 a {
     text-decoration: none;
 }
-
-
+    
 .promociones {
-
     background-image: url(./img/promocion.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 30vh;
     margin-top: 2rem;
     padding-top: 5rem;
-
-
 }
-
+    
 .promociones h2 {
     font-size: 3em;
     font-family: 'Playfair Display', serif;
     text-align: center;
     color: white;
 }
-
-
+    
 .nuevaTemporada {
-
     background-image: url(./img/promocion1.png);
     background-position: top;
     height: 30vh;
     margin-top: 2rem;
     padding-top: 5rem;
-  
-
-
 }
-
+    
 .nuevaTemporada h2 {
     font-size: 3em;
     font-family: 'Playfair Display', serif;
     text-align: center;
     color: white;
 }
-
+    
 .emprendimientos-seccion {
     display: flex;
     flex-direction: column;
     background-color: #c7beb165;
     margin: 3em 4rem 4rem 4rem;
 }
-
+    
 .emprendimientos-seccion section {
-
     padding: 5rem;
     margin: 3rem;
     padding-bottom: 0rem;
     padding-top: 0;
-
 }
-
+    
 .emprendimientos {
     text-align: center;
     font-size: 3rem;
@@ -128,7 +109,7 @@ a {
     font-weight: 400;
     font-style: italic;
 }
-
+    
 .encuentraloquebuscas {
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -136,18 +117,12 @@ a {
     color: black;
     padding-top: 0rem;
     margin: 2rem 5rem 5rem 5rem;
-
 }
-
-
-
-
+    
 .imagenEmprendimiento {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-
 }
 
 .imagenProducto img {
@@ -156,7 +131,6 @@ a {
 }
 
 .imagenProducto p {
-
     text-align: center;
     font-family: 'Playfair Display', serif;
     color: #a37dc7;
@@ -169,44 +143,67 @@ a {
     text-decoration: none;
 }
 
+.menuCentral {
+    list-style: none;
+    text-align: center;
+    background-color: blanchedalmond;  }
+
+.menuCentral li {
+    display: inline-block;
+    padding: 1rem;
+    font-weight: 600;  }
+
 h2 {
     text-align: center;
     padding-bottom: 3rem;
-    padding-top: 5rem;
+    padding-top: 5rem;  
 }
 
-.footer {
+.container-box{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    justify-content: center;  }
+
+.container-box .box{
+    margin: 0.2cm;
+    padding: 0.2cm; }
+
+img{
+    height: auto;
+    width: auto;
+    max-height: 800px;
+    max-width: 400px;
+ }
+
+.footer{
     display: flex;
     border-width: 0.05cm;
-    background-color: blanchedalmond;
-    
-
-}
+    background-color: blanchedalmond;  }
 
 .footer p {
     font-family: 'Roboto', sans-serif;
 }
+
 .contacto {
     text-align: left;
-    padding: 4rem;
-}
+    padding: 4rem;  }
 
 .contacto p {
-    padding: 1rem;
-}
+    padding: 1rem;  }
 
 .medios {
     text-align: left;
-    padding: 4rem;
-}
+    padding: 4rem;  }
 
 .medios p {
-    padding: 1rem;
-}
+    padding: 1rem;  }
 
 .medios img {
-    width: 16rem;
-}
+    width: 16rem;  }
+
+.mediosdepago img {
+    width: 16rem;  }
 
 @media (min-width: 320px) and (max-width: 768px) {
     h1 {
@@ -214,107 +211,89 @@ h2 {
         font-size: 15vh;
         color: #a37dc7
     }
-
-
+    
     .menuSuperior {
         list-style: none;
         text-align: center;
         background-color: blanchedalmond;
     }
-
+    
     .menuSuperior li {
         display: inline-block;
         padding: 1.2rem;
         font-weight: 600;
         padding-left: 1rem;
-
-
     }
-
+    
     .menuSuperior h1 {
         font-family: 'Playfair Display', serif;
         text-align: center;
-
     }
-
+    
     .menuSuperior label {
-        font-weight: 600;
+       font-weight: 600;
         color: #a37dc7;
         font-size: 0.5cm;
         margin-right: 1rem;
-
     }
-
+    
     .promociones {
         height: 60vh;
         margin-top: 2rem;
         padding-top: 5rem;
-
     }
-
+    
     .promociones h2{
         font-size: 2em;
     }
-
+    
     .nuevaTemporada {
-
         height: 60vh;
         margin-top: 2rem;
         padding-top: 5rem ;
         width: 100%;
-               background-repeat: no-repeat;
-
+        background-repeat: no-repeat;
     }
-
+    
     .nuevaTemporada h2 {
         font-size: 2em;
-  
     }
-
-
+    
     .emprendimientos-seccion {
         display: flex;
         flex-direction: column;
         margin: 1em 1em 0em 1rem;
-
     }
-
+    
     .emprendimientos {
         text-align: center;
         font-size: 2rem;
-
     }
-
+    
     .encuentraloquebuscas {
         margin: 1em 1em 0em 1rem;
     }
-
+    
     .imagenEmprendimiento {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-
     }
-
+    
     .imagenProducto img {
         width: 40%;
         padding: 5rem 5rem 5rem 6rem;
-
-
     }
-
-      .footer {
+    
+    .footer {
         display: flex;
         background-color: blanchedalmond;
         flex-direction: column;
         margin: 0;
-
-      }
-      .footer div {
+    }
+          
+    .footer div {
         padding: 1rem;
-      }
-    
-  
-
+    }
+        
 }
