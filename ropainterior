@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interiorstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <title>Hera</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav>
+            <ul class="menuSuperior">
+                <h1>HERA</h1>
+                <li>
+                    <a href="iropainterior.html"> Inicio </a>
+                </li>
+                <li>
+                    <a href="#"> Productos </a>
+                </li>
+                <li>
+                    <a href="#"> Como Comprar </a>
+                </li>
+                <li>
+                    <a href="#"> Cambios </a>
+                </li>
+                <li>
+                    <a href="#"> Sucursales </a>
+                </li>
+<br>
+                <label for="buscar"> Buscar</label>
+                <input type="text" name="buscar" value="">
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <h2 class="ropa">ROPA INTERIOR DE MUJER</h2>
+    <br>
+    <body>
+        <section>
+            <div class="container-box">
+                <div class="box">
+                    <img src="AdobeStock_309556435_Preview.jpeg" alt="imagen de conjuntop rosado">
+                    <h3>Conjunto rosado</h3>
+                    <h4>Precio: $2590</h4>
+                </div>
+                <div class="box">
+                    <img src="AdobeStock_506446579_Preview.jpeg" alt="imagen de corpiño nudee">
+                    <h3>Corpiño nude</h3>
+                    <h4>Precio: $2.590</h4>
+                </div>
+                <div class="box">
+                    <img src="AdobeStock_505566521_Preview.jpeg" alt="imagen de bombacha">
+                    <h3>Bombacha fitness</h3>
+                    <h4>Precio: $1.200</h4>
+                </div>
+                <div class="box">      
+                    <img src="AdobeStock_460335367_Preview.jpeg" alt="imagen de conjunto diario">
+                    <h3>Conjunto de diario</h3>
+                    <h4>Precio: $2150</h4>
+                </div>
+                <div class="box">        
+                    <img src="AdobeStock_303818532_Preview.jpeg" alt="imagen de conjunto blanco">
+                    <h3>Conjunto blanco</h3>
+                    <h4>Precio: $3990</h4>
+                </div>
+                <div class="box">        
+                    <img src="AdobeStock_497374626_Preview.jpeg" alt="imagen de conjunto negtro">
+                    <h3>Conjunto negro</h3>
+                    <h4>Precio: $1345</h4>
+                </div>
+                <div class="box">        
+                    <img src="AdobeStock_415121324_Preview.jpeg" alt="imagen de bombachas tres">
+                    <h3>Bombachas comodas</h3>
+                    <h4>Precio: $2350</h4>
+                </div>
+                <div class="box">        
+                    <img src="AdobeStock_377630244_Preview.jpeg" alt="imagen de conjunto formal">
+                    <h3>conjunto formal</h3>
+                    <h4>Precio: $2300</h4>
+                </div>
+                <div class="box">        
+                    <img src="AdobeStock_318624833_Preview.jpeg" alt="imagen de conjunto rojo">
+                    <h3>conjunto rojo</h3>
+                    <h4>Precio: $2450</h4>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <br><br><br>
+    <br><br><br>
+    <br><br>
+    
+    <h2>Ver más</h2>
+
+    <br><br><br><br><br>
+    <footer class="footer">
+
+        <div class="contacto">
+            <p>
+                Contactanos +125649432
+            </p>
+            <p>
+                Email emprendimietosarg@ingenias.cl
+            </p>
+            <p>
+                Instagram @empredimientosderopa
+            </p>
+        </div>
+
+        <div class="contacto">
+            <p>
+                Facebook @emprendimientos
+
+            </p>
+            <p>
+                Twitter @emprendimientos
+            </p>
+            <p>
+                Dirección av. siempreviva 24
+            </p>
+        </div>
+
+        <div class="medios">
+            <p>
+                Medios de Pago
+                <p>
+
+                <img src="./img/mediodepagos.jpg" alt="imagen de medios de pago">
+</p>
+            </p>
+
+            <p>
+                Medios de Envío
+            </p>
+            <p>
+                Emprendimientos de Ropa - Todos los derechos reservados
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
