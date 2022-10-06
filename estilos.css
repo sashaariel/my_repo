@@ -173,6 +173,29 @@ h2 {
     padding-top: 5rem;
 }
 
+.hh1{
+    font-family: 'Playfair Display', serif;
+    font-size:40px;
+    color: #a37dc7;
+    
+}
+
+.p2 {
+   
+    text-align: left;
+   
+    
+}
+
+.p3 {
+    text-align: center;
+}
+
+.inteegran li {
+    text-align: center;
+    display: inline-block;
+}
+
 
 .container-box{
     display: flex;
