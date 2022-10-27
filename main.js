@@ -17,3 +17,5 @@ for (let i = 1; i <= 3; i++) {
     alert(" Tu número de orden de compra es "+i+", Nombre: "+ingresarNombre);
    }
 
+
+   console.log(13 % 5)
