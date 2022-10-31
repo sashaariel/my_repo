@@ -13,16 +13,22 @@ h1 {
 }
 
 .encabezado {
+    position: fixed;
     background-image: top;
     background-color: white;
+    position: relative;
+    box-shadow: 0 4px 40px -22px black;
+    z-index: 10;
 }
 
 
-
 .menuSuperior {
+    
     list-style: none;
     text-align: center;
     background-color: blanchedalmond;
+    position: relative;
+    /* margin-right: 90px; */
 }
 
 .menuSuperior li {
@@ -31,7 +37,6 @@ h1 {
     font-weight: 600;
     padding-left: 1rem;
     font-family: 'Roboto', sans-serif;
-
 
 }
 
@@ -55,17 +60,100 @@ h1 {
 a {
     text-decoration: none;
 }
+/* buscado lupita */
 
+ #ctn-icon-search{
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} 
+
+#ctn-icon-search i{
+    font-size: 18px;
+    color: #a37dc7;
+    cursor: pointer;
+    transition: all 300ms;
+
+}
+#ctn-icon-search i:hover{
+    color: #8f62b9;
+}
+
+#ctn-bar-search {
+    position: relative;
+    top: -80px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+}
+
+#ctn-bar-search input {
+    display: block;
+    width: 1000px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+
+
+}
+
+#box-search {
+    position: fixed;
+    top:  165px;
+    width: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    margin-top: 80px;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+}
+
+#box-search li a {
+    display: block;
+    width: 1200px;
+    color: #777;
+    padding: 12px 20px;
+
+}
+
+#box-search li a:hover {
+    background-color: blanchedalmond;
+}
+
+
+#box-search li a i{
+    margin-right: 10px;
+    color: #a37dc7;
+}
+
+#cover-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 7;
+    display: none;
+
+}
 /* creación de carrusel index */
 
 #ConteItemsCarrusel {
-   
+
     height: 350px;
     margin: 50;
     overflow: hidden;
     position: relative;
     
 }
+
 .flechaCarrusel{
     opacity: 0.8; ;
     color: blanchedalmond;
@@ -78,17 +166,24 @@ a {
     justify-content: space-between;  
     padding: 20px;
 }
-
-
+.flechaCarrusel i {
+    font-size: 30px;
+}
+.flechaCarrusel i:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
 
 .promociones {
 
     background-image: url(./img/promocion.png);
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
+    height: 55vh;
     margin-top: 0rem;
     padding-top: 5rem;
+   
+
 
 
 }

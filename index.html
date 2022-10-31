@@ -13,13 +13,14 @@
 
 
 
+
     <title>Hera</title>
 </head>
 
 <body>
     <header class="encabezado">
         <h1>HERA</h1>
-
+        <div>
         <nav>
             <ul class="menuSuperior">
 
@@ -38,53 +39,64 @@
                 <li>
                     <a href="#"> Sucursales </a>
                 </li>
-                <li>
-                    <form action="">
-                        <label for="buscar"> Buscar</label>
-                        <input type="text" name="buscar">
-                        <input type="submit" name="buscar">
-                    </form>
-                </li>
-            </ul>
+                </ul>
         </nav>
+        </div>
+                <div id= "ctn-icon-search">
+                    <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                </div>
+      
     </header>
-
+    <div id="ctn-bar-search">
+        <input type="text" id="inputsearch" placeholder="Encuentra lo que quieres">
+    </div>
+    <ul id="box-search">
+        <li> <a href="Remeras.html"> <i class="fa-solid fa-magnifying-glass"></i>Remeras</a></li>
+        <li> <a href="Pantalones.html"> <i class="fa-solid fa-magnifying-glass"></i>Pantalones</a></li>
+        <li> <a href="RopaInterior.html"> <i class="fa-solid fa-magnifying-glass"></i>Ropa Interior</a></li>
+        <li> <a href="#"> <i class="fa-solid fa-magnifying-glass"></i>Calzado</a></li>
+        <li> <a href="#"> <i class="fa-solid fa-magnifying-glass"></i>Accesorios</a></li>
+    </ul>
+    <div id="cover-search"></div>
 
     <div id="ConteItemsCarrusel">
-        <div class= item1 id="itemCarrusel1"> 
-        <div class="promociones" >
-            <a href="#">
-                <h2>
-                    PROMOCIONES
-                </h2>
-            </a>
-        
-        <div class="flechaCarrusel">
-            <i class="fa-solid fa-circle-arrow-left" id="flecha1"></i>
-            <i class="fa-thin fa-circle-arrow-right" id="flecha2"></i>
-            
-        </div>
-        </div>
-    </div>
+        <div class=item1 id="itemCarrusel1">
+            <div class="promociones">
+                <a href="Pantalones.html">
+                    <h2>
+                        PROMOCIONES
+                    </h2>
+                </a>
 
-    <div class= item2 id="itemCarrusel2"> 
-        <div class="nuevaTemporada" >
-            <a href="#">
-                <h2>
-                    NUEVA TEMPORADA
-                </h2>
-            </a>
-        
-        <div class="flechaCarrusel">
-            <i class="fa-solid fa-circle-arrow-left"></i>
-            <i class="fa-solid fa-circle-arrow-right"></i>     
-                
-
-            
+                <div class="flechaCarrusel">
+                    <a href="#itemCarrusel2">
+                        <i class="fa-solid fa-circle-arrow-left" id="flecha1"></i>
+                    </a>
+                    <a href="#itemCarrusel2">
+                        <i class="fa-solid fa-circle-arrow-right" id="flecha2"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
 
-    </div>
+        <div class=item2 id="itemCarrusel2">
+            <div class="nuevaTemporada">
+                <a href="#">
+                    <h2>
+                        NUEVA TEMPORADA
+                    </h2>
+                </a>
+
+                <div class="flechaCarrusel">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+
+
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
@@ -197,7 +209,9 @@
 
     </footer>
 
-    <script src="./main.js"></script>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>

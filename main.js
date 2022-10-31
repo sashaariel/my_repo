@@ -1,23 +1,23 @@
 // Prompt
 
 
-let nombreingresado = prompt("ingrese su nombre")
-var blanco = " "
-if (nombreingresado != "") {
-    alert("Hola" + blanco + nombreingresado + ", bienvenidx a Hera");
-}
-else {
-    alert("Ingresa un Nombre")
-}
+// let nombreingresado = prompt("ingrese su nombre")
+// var blanco = " "
+// if (nombreingresado != "") {
+//     alert("Hola" + blanco + nombreingresado + ", bienvenidx a Hera");
+// }
+// else {
+//     alert("Ingresa un Nombre")
+// }
 
-//Operacion y calculo de N° de Orden de Compra
+// //Operacion y calculo de N° de Orden de Compra
 
-for (let i = 1; i <= 3; i++) {
-    // En cada repetición solicitamos un nombre.
-    let ingresarNombre = prompt("Ingresar nombre");
-    // Informamos el turno asignado usando el número de repetición (i).
-    alert(" Tu número de orden de compra es " + i + ", Nombre: " + ingresarNombre);
-}
+// for (let i = 1; i <= 3; i++) {
+//     // En cada repetición solicitamos un nombre.
+//     let ingresarNombre = prompt("Ingresar nombre");
+//     // Informamos el turno asignado usando el número de repetición (i).
+//     alert(" Tu número de orden de compra es " + i + ", Nombre: " + ingresarNombre);
+// }
 
 
 //   Calcular precio
@@ -74,16 +74,78 @@ dia[5]="Viernes";
 dia[6]="Sabado";
 document.write("Hoy es: " + dia[d.getDay()]);
 
+//BUSCADOR DE CONTENIDO
+
+document.getElementById("icon-search").addEventListener("click", mostrar_buscador);
+document.getElementById("cover-search").addEventListener("click", ocultar_buscador)
+
+let bars_search = document.getElementById("ctn-bar-search");
+cover_ctn_search = document.getElementById ("cover-search");
+inputSearch = document.getElementById ("inputsearch");
+box_search = document.getElementById ("box-search");
+
+function mostrar_buscador(){
+
+    bars_search.style.top= "-10px";
+    cover_ctn_search.style.display = "block";
+    inputSearch.focus();
+ 
+}
+
+function ocultar_buscador(){
+
+    bars_search.style.top = "-80px";
+    cover_ctn_search.style.display = "none";
+    inputSearch.value = "";
+    box_search.style.display = "none"
+}
+
+document.getElementById("inputsearch").addEventListener("keyup", buscador_interno);
+
+function buscador_interno(){
+
+    filter = inputSearch.value.toUpperCase();
+    li = box_search.getElementsByTagName("li");
+
+    //para que recorra y filtre con los li
+
+    for (i = 0; i < li.length; i++ ){
+
+        a = li[i].getElementsByTagName("a")[0];
+
+        textValue = a.textContent || a.innerText;
+
+        if(textValue.toUpperCase().indexOf(filter) > -1) {
+
+            li[i].style.display = "";
+            box_search.style.display = "block";
+            if (inputSearch.value === ""){
+                box_search.style.display= "none"
+            }
+        }
+        else{
+
+            li[i].style.display = "none";
+        }
+    }
+
+}
+
+
 
 // Carrusel 
 
-document.getElementById ("flecha2").addEventListener ("click", mover_items);
+let flechas_carrusel = document.getElementsByClassName ("flechaCarrusel");
+let item_1 = document.getElementsByClassName ("promociones");
+let item_2 = document.getElementsByClassName ("nuevaTemporada");
 
-document.getElementById ("ConteItemsCarrusel");
-flechas_carrusel = document.getElementsByClassName ("flechaCarrusel");
-item_1 = document.getElementsByClassName ("promociones");
-item_2 = document.getElementsByClassName ("nuevaTemporada");
 
-function mover_items () {
-   item_2
+function mostrar_items () {
+    item_1.style.top = "-80px";
 }
+flechas_carrusel.addEventListener("click", mostrar_items)
+
+
+
+
+
