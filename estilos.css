@@ -19,7 +19,7 @@ h1 {
     font-size: 15vh;
     color: #a37dc7;
     font-size: 5.5em;
-    background-color: blanchedalmond;
+    background-color:rgb(255, 243, 226);
 }
 
 .encabezado {
@@ -27,7 +27,7 @@ h1 {
     /* background-image: top; */
     background-color: white;
     z-index: 10;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 243, 226);
     box-shadow: 0 4px 40px -22px black;
 }
 
@@ -41,7 +41,7 @@ h1 {
     
     list-style: none;
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 243, 226);
     /* position: absolute; */
     /* margin-left: 25%;
     margin-right: 10px; */
@@ -72,7 +72,8 @@ h1 {
 }
 
 .menuSuperior li:hover {
-    background-color: rgb(223, 197, 159);
+    background-color: rgb(252, 229, 194);
+    transition: 800ms;
 }
 
 
@@ -381,7 +382,7 @@ img{
  .footer {
     display: flex;
     border-width: 0.05cm;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 243, 226);;
 }
 
 .footer p {
@@ -420,7 +421,7 @@ img{
     .menuSuperior {
         list-style: none;
         text-align: center;
-        background-color: blanchedalmond;
+        background-color: rgb(255, 243, 226);
     }
 
     .menuSuperior li {
@@ -507,7 +508,7 @@ img{
 
       .footer {
         display: flex;
-        background-color: blanchedalmond;
+        background-color: rgb(255, 243, 226);;
         flex-direction: column;
         margin: 0;
 
