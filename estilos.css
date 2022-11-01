@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
 }
 header {
     position: relative;
@@ -183,7 +192,7 @@ a {
 /* creación de carrusel index */
 
 #ConteItemsCarrusel {
-
+display: grid;
     height: 350px;
     margin: 50;
     overflow: hidden;
@@ -198,18 +207,27 @@ a {
     position: absolute;
     top: 0;
     width: 100%;
-    display: flex;
+  display: flex;
     align-items: center;
     justify-content: space-between;  
     padding: 20px;
+    pointer-events: none;
 }
 .flechaCarrusel i {
     font-size: 30px;
+    pointer-events: unset;
 }
 .flechaCarrusel i:hover{
     cursor: pointer;
     transform: scale(1.2,1.2);
+    
 }
+
+.flechaCarrusel i a{
+    pointer-events: unset;
+}
+
+
 
 .promociones {
 
@@ -219,8 +237,7 @@ a {
     height: 55vh;
     margin-top: 0rem;
     padding-top: 5rem;
-   
-
+ 
 
 
 }
@@ -240,8 +257,6 @@ a {
     height: 50vh;
     margin-top: 0rem;
     padding-top: 5rem;
-  
-
 
 }
 
@@ -253,10 +268,47 @@ a {
 }
 
 
-
-
 /* fin creacion de carrusel en index */
 
+.imagencentral {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+   
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "p img"
+    "img p";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.imagencentral p {
+    margin-top: 160px;
+    size: 50px;
+    font-size: 2.8vh;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.imagencentral img {
+    border-radius: 50%;
+    padding: 60px;
+    margin-right: 160px;
+    margin-left: 160px;
+}
+
+.imagencentral2 img{
+    border-radius: none;
+}
 /* sección de los emprendimiento */
 
 .emprendimientos-seccion {

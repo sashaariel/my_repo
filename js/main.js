@@ -123,18 +123,18 @@ function buscador_interno(){
 
 
 // Carrusel 
+document.getElementsById("flecha1").addEventListener("click", mostrar_items)
+document.getElementsById("flecha2").addEventListener("click", mostrar_items)
 
 let flechas_carrusel = document.getElementsByClassName ("flechaCarrusel");
-let item_1 = document.getElementsByClassName ("promociones");
-let item_2 = document.getElementsByClassName ("nuevaTemporada");
+flechad = document.getElementById("flecha1");
+flechai = document.getElementById("flecha2");
+item_1 = document.getElementsByClassName("promociones");
+item_2 = document.getElementsByClassName("nuevaTemporada");
 
 
-function mostrar_items () {
-    item_1.style.top = "-80px";
+function mostrar_items() {
+    item_2
+
 }
-flechas_carrusel.addEventListener("click", mostrar_items)
-
-
-
-
 
