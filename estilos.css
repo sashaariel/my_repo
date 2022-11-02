@@ -399,10 +399,10 @@ a {
     text-decoration: none;
 }
 
-h2 {
+.pantalones {
     text-align: center;
     padding-bottom: 3rem;
-    padding-top: 5rem;
+    padding-top: 5rem; 
 }
 
 .hh1{
@@ -476,6 +476,45 @@ img{
 .medios img {
     width: 16rem;
 }
+
+
+/* FORMULARIO DE INSCRIPCIONES  */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh ;
+}
+
+.formulario h2{
+
+    
+}
+
+
+/* VER MÁS */
+
+.Vermas {
+
+    background-color: blanchedalmond;
+    margin: 3% 45% 1% 45%;
+ 
+}
+
+.Vermas:hover{
+    background-color: #a986c9c2;
+    transition: 300ms;
+}
+
+.Vermas h2 {
+    text-align: center;
+    padding: 1rem;
+    color: #8f62b9;
+    }
+
+
 
 @media (min-width: 320px) and (max-width: 768px) {
     h1 {
@@ -585,3 +624,4 @@ img{
       }
     
 }
+
