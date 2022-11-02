@@ -187,6 +187,12 @@ a {
     display: none;
 
 }
+
+.inputsearch {
+    border-color: #c0c0c0;
+    border: 1px solid #c0c0c0;
+}
+
 /* creación de carrusel index */
 
 #ConteItemsCarrusel {
@@ -236,7 +242,7 @@ a {
     background-position: center;
     height: 55vh;
     margin-top: 0rem;
-    padding-top: 5rem;
+    padding-top: 8rem;
  
 
 
@@ -479,6 +485,10 @@ img{
 
 
 /* FORMULARIO DE INSCRIPCIONES  */
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 40px; }
 
 .formulario {
     display: flex;
@@ -490,7 +500,29 @@ img{
 
 .formulario h2{
 
+    font-size: 50px;
+    color: rgb(255, 203, 72);
+    padding: 50px;
+
+}
+
+.form-empre{
+
+    padding: 20px;
     
+}
+
+.form-empre label {
+ font-size: 18px;
+ 
+}
+
+.form-empre input {
+    display: block;
+    width: 1000px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
 }
 
 
