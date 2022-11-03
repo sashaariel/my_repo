@@ -130,7 +130,7 @@ a {
     position: relative;
     top: -80px;
     width: 100%;
-    background: white;
+    /* background-color: rgba(200, 162, 205, 0.088); */
     padding: 20px;
     z-index: 9;
     transition: all 600ms;
@@ -197,7 +197,7 @@ a {
 
 #ConteItemsCarrusel {
     display: grid;
-    height: 350px;
+    height: 400px;
     margin: 50;
     overflow: hidden;
     position: relative;
@@ -240,7 +240,7 @@ a {
     background-image: url(./img/promocion.png);
     background-repeat: no-repeat;
     background-position: center;
-    height: 55vh;
+    height: 60vh;
     margin-top: 0rem;
     padding-top: 8rem;
  
@@ -309,7 +309,7 @@ a {
     margin-top: 160px;
     size: 50px;
     font-size: 2.8vh;
-    
+    font-family: 'Roboto', sans-serif;
     margin-right: 160px; 
 }
 .parrafo2 {
@@ -317,6 +317,7 @@ a {
     size: 50px;
     font-size: 2.8vh;
     margin-right: 160px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .imagencentral1 {
@@ -335,7 +336,7 @@ a {
 .emprendimientos-seccion {
     display: flex;
     flex-direction: column;
-    background-color: #c7beb165;
+    background-color: rgb(255, 243, 226);
     margin: 3em 4rem 4rem 4rem;
 }
 
@@ -366,9 +367,11 @@ a {
         color: black;
     padding-top: 0rem;
     margin: 2rem 5rem 5rem 5rem;
+    line-height: 2em;
+    
+    
 
 }
-
 
 
 
@@ -388,7 +391,7 @@ a {
 .imagenProducto p {
 
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family:   'Roboto', sans-serif;
     color: #a37dc7;
     font-weight: 600;
     border-radius: 50em;
@@ -503,6 +506,7 @@ fieldset {
     font-size: 50px;
     color: rgb(255, 203, 72);
     padding: 50px;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -514,6 +518,7 @@ fieldset {
 
 .form-empre label {
  font-size: 18px;
+ font-family: 'Roboto', sans-serif;
  
 }
 
@@ -544,6 +549,7 @@ fieldset {
     text-align: center;
     padding: 1rem;
     color: #8f62b9;
+    font-family: 'Roboto', sans-serif;
     }
 
 
