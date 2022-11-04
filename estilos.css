@@ -206,36 +206,33 @@ a {
     
 }
 
+.item {
+    position: relative;
+}
+
 .flechaCarrusel{
     opacity: 0.8; ;
-   
-    height: 100%;
+    height: 10%;
     position: absolute;
     top: 0;
     width: 100%;
-  display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;  
     padding: 20px;
-    pointer-events: none;
+    margin-top: 200px;
+    /* pointer-events: none; */
 }
 .flechaCarrusel i {
     font-size: 30px;
     pointer-events: unset;
-    color: blanchedalmond;
+    color:#a37dc7;
 }
 .flechaCarrusel i:hover{
     cursor: pointer;
     transform: scale(1.2,1.2);
     
 }
-
-.flechaCarrusel a{
-    pointer-events: unset;
-    
-}
-
-
 
 .promociones {
 
@@ -262,7 +259,7 @@ a {
 
     background-image: url(./img/promocion1.png);
     background-position: top;
-    height: 50vh;
+    height: 60vh;
     margin-top: 0rem;
     padding-top: 5rem;
 

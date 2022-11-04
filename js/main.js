@@ -83,18 +83,18 @@ function buscador_interno(){
 // Carrusel 
 
 // document.querySelectorAll("#flecha1").addEventListener("click", mostrar_items);
-// document.getElementById("flecha1").addEventListener("click", mostrar_items);
+document.getElementById("flecha1").addEventListener("click", mostrar_items);
 
-// let flechas_carrusel = document.getElementsByClassName ("flechaCarrusel");
-// flechad = document.getElementById("flecha1");
-// flechai = document.getElementById("flecha2");
-// item_1 = document.getElementsByClassName("promociones");
-// item_2 = document.getElementsByClassName("nuevaTemporada");
+let flechas_carrusel = document.getElementsByClassName ("flechaCarrusel");
+flechad = document.getElementById("flecha1");
+flechai = document.getElementById("flecha2");
+item_1 = document.getElementsByClassName("promociones");
+item_2 = document.getElementsByClassName("nuevaTemporada");
 
 
-// function mostrar_items() {
-//     item_1.style.backgroundImage = "url(./img/promocion1.png)";
-// }
+function mostrar_items() {
+    item_1.style.backgroundImage = "url(./img/promocion1.png)";
+}
 
 
 
