@@ -82,20 +82,51 @@ function buscador_interno(){
 
 // Carrusel 
 
-document.getElementsById("flecha1").addEventListener("click", mostrar_items)
-document.getElementsById("flecha2").addEventListener("click", mostrar_items)
+// document.querySelectorAll("#flecha1").addEventListener("click", mostrar_items);
+// document.getElementById("flecha1").addEventListener("click", mostrar_items);
 
-let flechas_carrusel = document.getElementsByClassName ("flechaCarrusel");
-flechad = document.getElementById("flecha1");
-flechai = document.getElementById("flecha2");
-item_1 = document.getElementsByClassName("promociones");
-item_2 = document.getElementsByClassName("nuevaTemporada");
+// let flechas_carrusel = document.getElementsByClassName ("flechaCarrusel");
+// flechad = document.getElementById("flecha1");
+// flechai = document.getElementById("flecha2");
+// item_1 = document.getElementsByClassName("promociones");
+// item_2 = document.getElementsByClassName("nuevaTemporada");
 
 
-function mostrar_items() {
-    item_2
+// function mostrar_items() {
+//     item_1.style.backgroundImage = "url(./img/promocion1.png)";
+// }
+
+
+
+// Fromulario de inscripción de emprendimientos
+
+let inscripcion_list = [];
+
+function addEmprendToSystem (emprendimiento, nombre, email, telef ){
+    let newEmprend = {
+        namepyme : emprendimiento,
+        name : nombre,
+        mail : email,
+        number: telef
+
+    };
+    console.log(newEmprend)
+    inscripcion_list.push(newEmprend);
+    
+}
+
+
+
+document.querySelector("#saveinfo").addEventListener("click", saveInfo);
+
+function saveInfo(){
+    let snamepyme = document.querySelector("#textName").value;
+    sname = document.querySelector("#textNA").value;
+    smail = document.querySelector("#textEmail").value;
+    snumber = document.querySelector("#textnumber").value;
+
+    addEmprendToSystem(snamepyme, sname, smail, snumber)
 
 }
 
-// Fromulario de inscripción de emprendimientos
 

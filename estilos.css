@@ -195,6 +195,8 @@ a {
 
 /* creación de carrusel index */
 
+
+
 #ConteItemsCarrusel {
     display: grid;
     height: 400px;
@@ -272,7 +274,7 @@ a {
     text-align: center;
     color: white;
 }
-
+ 
 
 /* fin creacion de carrusel en index */
 
@@ -531,12 +533,27 @@ fieldset {
 }
 
 
+.btn {
+   
+height: 50px;
+    width: 100px;
+    font-size: 17px;
+    color: #a37dc7;
+
+}
+
+.formulario button {
+
+    margin-left: 45%;
+}
+
+
 /* VER MÁS */
 
 .Vermas {
 
     background-color: blanchedalmond;
-    margin: 3% 45% 1% 45%;
+    margin: 3% 43% 1% 43%;
  
 }
 
